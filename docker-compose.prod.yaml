@@ -1,0 +1,12 @@
+services:
+  react-app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile.prod
+    container_name: birthday-app-prod
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    ports: 
+      - '2000:80'
+    restart: unless-stopped

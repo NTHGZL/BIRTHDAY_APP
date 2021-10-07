@@ -12,7 +12,6 @@ function App() {
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
   
-  const today = new Date();
   const getBirthday = () => {
     if(new Date() < new Date(2021, new Date().getMonth(), 7)){
       return moment(`07 10 ${moment().get('year')} 0:00 am`, 'DD MM YYYY, h:mm a')

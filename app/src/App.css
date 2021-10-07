@@ -39,3 +39,27 @@
 a{
   color: white;
 }
+
+.progress-container{
+  width: 500px;
+  height: 10px;
+  margin: auto;
+  border: 1px solid white;
+  background-color: white;
+}
+.progress-bar{
+  background-color: green;
+  
+  height: 100%;
+  animation: progress 3s ease-out;
+}
+
+@keyframes progress {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+  
+}

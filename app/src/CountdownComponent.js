@@ -57,9 +57,9 @@ export const CountdownComponent = ({day, month}) => {
 
        
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        
+      
         
             {
                 (months === 0) && (days === 0) && (hours === 0) && (minutes === 0) && (seconds === 0) ?
@@ -70,6 +70,7 @@ export const CountdownComponent = ({day, month}) => {
                         </div>
                     ) : (
                         <div>
+                        <h1 id="title">Welcome to Nathan Gonzalez's server</h1>
                         <img src={logo} className="App-logo" alt="logo" />
         {(getBirthday().get('date') === now.get('date') )&&(getBirthday().get('month') === now.get('month')) ? (<TheDay />) : ('')}
                         <div id="countdown">
@@ -99,6 +100,12 @@ export const CountdownComponent = ({day, month}) => {
                       <div className="value">{seconds}</div>
                         <div className="time">SECONDES</div>
                       </div>
+                      </div>
+                      <div>
+                        At the end of the countdown, wish me a happy birthday at : <a href="mailto:nathangonzalez@outlook.fr">nathangonzalez@outlook.fr</a>
+                      </div>
+                      <div style={{fontSize: "10px", margin: "20px 0" }}>
+                        <a href="https://github.com/NTHGZL/BIRTHDAY_APP">Github</a> | <a href="https://www.florin-pop.com/blog/2019/05/countdown-built-with-react/">Inspiration</a>
                       </div>
                       </div>
                     )

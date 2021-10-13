@@ -5,7 +5,7 @@ import { CountdownComponent } from './CountdownComponent';
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <CountdownComponent day="7" month="10" />
     </div>
   )

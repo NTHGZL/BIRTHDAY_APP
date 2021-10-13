@@ -4,7 +4,7 @@ Inspired by : https://www.florin-pop.com/blog/2019/05/countdown-built-with-react
 
 ## Get started
 
-1 - Go to src/App.js and edit the Countdown Component with your birthday.
+1 - Go to app/src/App.js and edit the Countdown Component with your birthday.
 
 2 - Run : 
 ```bash

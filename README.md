@@ -10,4 +10,6 @@ Inspired by : https://www.florin-pop.com/blog/2019/05/countdown-built-with-react
 ```bash
 $ - docker-compose -f docker-compose.prod.yaml up -d --build
 ```
-3 - Enjoy
+3 - Go to http://localhost:2000/.
+
+4 - Enjoy
